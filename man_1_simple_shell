@@ -1,0 +1,26 @@
+.TH man page simple shell
+.SH name
+simple_shell - a typical shell would read and execute its configuration files. 
+
+.SH SYNOPSIS
+[command_string [arg...][file]]
+
+.SH DESCRIPTION
+A shell is a program that provides the traditional, text-only user interface for Linux and other Unix-like operating systems. Its primary function is to read commands that are typed into a console (i.e., an all-text display mode) or terminal window (an all-text window) in a GUI (graphical user interface) and then execute (i.e., run) them.
+
+TO EDIT:
+builtin shell-builtin [arguments]
+Execute the specified shell builtin, passing it arguments, and return its exit status. This is useful when defining a function whose name is the same as a shell builtin, retaining the functionality of the builtin within the function. This shell currently supports \fBenv\fR and \fBexit\fR
+
+SH.NOTES
+This shell current supports the command ls and implements builtins env and exit.
+
+.SH EXAMPLE
+To list files in the current directory in interactive mode:
+.B ls
+
+.SH BUGS
+not all memory freed
+
+.SH AUTHORS
+Emna Bouaziz, Eya Nani.
