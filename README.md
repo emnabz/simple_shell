@@ -1,16 +1,24 @@
-Description
-simple_shell is a command line interpreter, in the tradition of the first Unix shell written by Ken Thompson in 1971. it includes the basic functionality of a traditional Unix-like command line user interface. Standard functions and system calls employed in simple_shell include: access, execve, exit, fork, free, fstat, getline, malloc, perror, signal, stat, wait, write.
-Authors
+.B Simple shell
+.B Description
+simple_shell is a command line interpreter. it includes the basic functionality of a traditional Unix-like command line user interface.
+.B Quik start
+1- clone the repository to your local directory
+
+$ git clone https://github.com/emnabz/simple_shell.git
+
+2- Start up simple_shell, compile using
+
+$ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+.B Current features
+Run commands in $PATH
+use "exit" or "ctr + D" to close the program
+use "cd" to navigate
+. B Usage Examples
+start by opening the shell and running a simple command like pwd, then exit:
+simple_shell:/home/username$ pwd
+/home/username/
+simplesh:/home/username$ exit
+Username@your-regular-prompt:~$
+.B Authors
 Nani Eya & Bouaziz Emna
 Files
-Simple shell 0.1 : Write a UNIX command line interpreter.
-Display a prompt and wait for the user to type a command. A command line always ends with a new line.
-The prompt is displayed again each time a command has been executed.
-The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
-The command lines are made only of one word. No arguments will be passed to programs.
-If an executable cannot be found, print an error message and display the prompt again.
-Handle errors.
-Simple shell 0.2 : Handle command lines with arguments
-Simple shell 0.3 : Handle the PATH
-Simple shell 0.4 : Implement the exit built-in, that exits the shell
-Simple shell 1.0 : Implement the env built-in, that prints the current environment
