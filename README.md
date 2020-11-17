@@ -15,6 +15,6 @@ start by opening the shell and running a simple command like pwd, then exit:
 ```simple_shell:/home/username$ pwd
 /home/username/
 simplesh:/home/username$ exit
-Username@your-regular-prompt:~$```
+Username@your-regular-prompt:~$ ```
 ## **Authors** <h2>
 Nani Eya & Bouaziz Emna
