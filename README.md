@@ -12,9 +12,9 @@ use "exit" or "ctr + D" to close the program
 use "cd" to navigate
 ## **Usage Examples** <h2>
 start by opening the shell and running a simple command like pwd, then exit:
-simple_shell:/home/username$ pwd
-/home/username/
-simplesh:/home/username$ exit
-Username@your-regular-prompt:~$
+`<addr>`simple_shell:/home/username$ pwd
+`<addr>`/home/username/
+`<addr>`simplesh:/home/username$ exit
+`<addr>`Username@your-regular-prompt:~$
 ## **Authors** <h2>
 Nani Eya & Bouaziz Emna
