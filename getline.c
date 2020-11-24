@@ -1,45 +1,36 @@
-#include "holberon.h"
+#include "holberton.h"
 /**
- * *getline - recreate the getline function
+ * *_getline - recreate the getline function
  */
-char *getline(void)
+char *_getline(void)
 {
-{
-int bufsize = 1024;
-int position = 0;
-char *buffer 
+int position = 0, bufsize = 1024;
+char *buffer; 
 int c;
-buffer = malloc(bufsize);
+buffer = malloc(bufsize * sizeof(char *));
 if (buffer == NULL)
-return (0);
+return (NULL);
 if (!buffer) 
 {
 perror("error");
-exit(-1);
+return (NULL);
 }
-while (1);
+do 
 {
-fflush(stdin);
 c = read(STDIN_FILENO, &c, 1);
-if (c == EOF || c == '\n')
-{
-buffer[position] = '\0';
-return buffer;
-}
-else 
-{
 buffer[position] = c;
-}
 position++;
 if (position >= bufsize)
 {
-buffer  = _realloc(buffer,bufsize, buffsize + 1);
+buffer  = _realloc(buffer,bufsize, bufsize + 1);
 if (buffer == NULL)
 {
 perror(" allocation error\n");
-exit(EXIT_FAILURE);
+return (NULL);
 }
 }
 }
+while (c != EOF && c != '\n');
+buffer[position] = '\0';
 return (buffer);
 }
