@@ -1,4 +1,8 @@
-char getline(void)
+#include "holberon.h"
+/**
+ * *getline - recreate the getline function
+ */
+char *getline(void)
 {
 {
 int bufsize = 1024;
