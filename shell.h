@@ -16,13 +16,8 @@
 char *lsh_read_line(void);
 char *_realloc(char *ptr, int old_size, int new_size);
 char *_getline(void);
-int main(void);
-int lsh_launch(char **args);
+int main(int argc, char **argv);
 void loop(void);
-int lsh_execute(char **args);
 char *_realloc(char *ptr, int old_size, int new_size);
 char **_split_line(char *line);
-int lsh_exit(char **args);
-int lsh_cd(char **args);
-int lsh_help(char **args);
 #endif
