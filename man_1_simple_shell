@@ -1,6 +1,6 @@
 .TH man page simple shell
 .SH Name
-simple_shell - a typical shell would read and execute its configuration files. 
+simple_shell - a typical shell would read and execute its configuration files.
 
 .SH SYNOPSIS
 [command_string [arg...][file]]
