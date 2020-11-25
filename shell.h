@@ -10,10 +10,13 @@
 #include <stdlib.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+int main(void);
+void loop(void);
 char *read_line(void);
 char *_getline(void);
-int main(int argc, char **argv);
-void loop(void);
 char *_realloc(char *ptr, int old_size, int new_size);
 char **_split_line(char *line);
+int cdfunc(char **args);
+int execute(char **args);
+int cdfunc(char **args);
 #endif
