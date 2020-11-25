@@ -1,23 +1,21 @@
 #include "shell.h"
+#include <stdio.h>
 /**
- * lsh_read_line - read a line
- * Return: a string
- */
-char *lsh_read_line(void)
+*read_line - gets command line from user
+*
+*Return: returns the user input from the command line
+*/
+char *read_line(void)
 {
 char *line = NULL;
-ssize_t bufsize = 0;
-if (getline(&line, &bufsize, stdin) == -1)
+size_t n = 0;
+if (isatty(STDIN_FILENO) == 1)
+write(1, "$ ", 2);
+if (getline(&line, &n, stdin) <= 0)
 {
-if (feof(stdin))
-{
-exit(EXIT_SUCCESS);
-}
-else
-{
-perror("readline");
-exit(EXIT_FAILURE);
-}
+if (isatty(STDIN_FILENO) == 1)
+write(STDOUT_FILENO, "\n", 1);
+hsh_exit(NULL, line);
 }
 return (line);
 }
