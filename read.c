@@ -1,3 +1,8 @@
+#include "holberton.h"
+/**
+ * lsh_read_line - read a line
+ * Return: a string
+ */
 char *lsh_read_line(void)
 {
 char *line = NULL;
@@ -14,5 +19,5 @@ perror("readline");
 exit(EXIT_FAILURE);
 }
 }
-return line;
+return (line);
 }
