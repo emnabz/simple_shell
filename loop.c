@@ -11,8 +11,8 @@ int status;
 do {
 printf("$ ");
 line = getline();
-args = lsh_split_line(line);
-status = lsh_execute(args);
+args = split_line(line);
+status = execute(args);
 free(line);
 free(args);
 }
