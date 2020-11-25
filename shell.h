@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-char *lsh_read_line(void);
+char *read_line(void);
 char *_getline(void);
 int main(int argc, char **argv);
 void loop(void);
