@@ -1,5 +1,7 @@
 #ifndef SHELL
 #define SHELL
+#define BUFSIZE 1024
+#define LSH_TOK_BUFSIZE 64
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -11,9 +13,6 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <linux/limits.h>
-#define BUFSIZE 1024
-#define LSH_TOK_BUFSIZE 64
-#define LSH_TOK_DELIM " \t\r\n\a"
 char *lsh_read_line(void);
 char *_realloc(char *ptr, int old_size, int new_size);
 char *_getline(void);
@@ -26,5 +25,4 @@ char **_split_line(char *line);
 int lsh_exit(char **args);
 int lsh_cd(char **args);
 int lsh_help(char **args);
-int lsh_exit(char **args);
 #endif
