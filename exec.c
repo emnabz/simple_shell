@@ -2,9 +2,8 @@
 /**
  * execute - executes a program
  * @args: a double pointer of command line arguments
- * @program: name of shell
  *
- * Return: always returns 1
+ * Return: always an int
  */
 int execute(char **args)
 {
@@ -19,14 +18,14 @@ return (-1);
 else if (child == 0)
 {
 if (execvp(args[0], args) < 0)
-{ 
-perror("Could not execute command"); 
-} 
+{
+perror("Could not execute command");
+}
 exit(0);
 }
 else
-{ 
-wait(NULL);  
-return (0); 
+{
+wait(NULL);
+return (0);
 }
 }
