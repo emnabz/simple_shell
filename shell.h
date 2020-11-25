@@ -14,7 +14,6 @@
 #include <errno.h>
 #include <linux/limits.h>
 char *lsh_read_line(void);
-char *_realloc(char *ptr, int old_size, int new_size);
 char *_getline(void);
 int main(int argc, char **argv);
 void loop(void);
