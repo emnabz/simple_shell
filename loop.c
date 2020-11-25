@@ -3,14 +3,14 @@
  *lsh_loop - loop 
  *
  */
-void lsh_loop(void)
+void loop(void)
 {
 char *line;
 char **args;
 int status;
 do
 {
-printf("> ");
+printf("$ ");
 line = getline();
 args = lsh_split_line(line);
 status = lsh_execute(args);
