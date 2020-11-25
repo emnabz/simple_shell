@@ -1,5 +1,4 @@
 #include "shell.h"
-#include <stdio.h>
 /**
 *read_line - gets command line from user
 *
@@ -15,7 +14,7 @@ if (getline(&line, &n, stdin) <= 0)
 {
 if (isatty(STDIN_FILENO) == 1)
 write(STDOUT_FILENO, "\n", 1);
-hsh_exit(NULL, line);
+exit(1);
 }
 return (line);
 }

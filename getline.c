@@ -30,6 +30,7 @@ return (NULL);
 }
 }
 while (c != EOF && c != '\n')
+}
 buffer[position] = '\0';
 return (buffer);
 }

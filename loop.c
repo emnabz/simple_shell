@@ -9,12 +9,11 @@ char *line;
 char **args;
 int status;
 do {
-printf("$ ");
-line = getline();
-args = split_line(line);
+line = read_line();
+args = _split_line(line);
 status = execute(args);
 free(line);
 free(args);
-}
 while (status)
+}
 }

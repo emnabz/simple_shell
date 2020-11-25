@@ -8,7 +8,6 @@
 int execute(char **args)
 {
 pid_t child;
-int status;
 child = fork();
 if (child == -1)
 {
