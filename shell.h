@@ -8,11 +8,8 @@
 #include <string.h>
 #include <sys/wait.h>
 #include <stdlib.h>
-#include <signal.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <errno.h>
-#include <linux/limits.h>
 char *lsh_read_line(void);
 char *_getline(void);
 int main(int argc, char **argv);
