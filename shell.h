@@ -14,6 +14,7 @@
 #define BUFSIZE 1024
 #define LSH_TOK_BUFSIZE 64
 #define LSH_TOK_DELIM " \t\r\n\a"
+char *lsh_read_line(void);
 char *_realloc(char *ptr, int old_size, int new_size);
 char *_getline(void);
 int main(void);
