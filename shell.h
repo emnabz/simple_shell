@@ -1,5 +1,5 @@
-#ifndef SHELL
-#define SHELL
+#ifndef HEADER
+#define HEADER
 #define BUFSIZE 1024
 #define LSH_TOK_BUFSIZE 64
 #include <stdio.h>
