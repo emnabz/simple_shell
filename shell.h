@@ -26,22 +26,4 @@ int lsh_exit(char **args);
 int lsh_cd(char **args);
 int lsh_help(char **args);
 int lsh_exit(char **args);
-char *builtin_str[] = {
-"cd",
-"help",
-"exit"
-};
-/**
- * lsh_num_builtins - builtin
- * @builtin_func : the builtin
- */
-int (*builtin_func[]) (char **) = {
-&lsh_cd,
-&lsh_help,
-&lsh_exit
-};
-int lsh_num_builtins(void)
-{
-return (sizeof(builtin_str) / sizeof(char *));
-}
 #endif
