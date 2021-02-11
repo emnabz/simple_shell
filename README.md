@@ -10,9 +10,11 @@ simple_shell is a command line interpreter. it includes the basic functionality 
 Run commands in $PATH use "exit" or "ctr + D" to close the program use "cd" to navigate
 ## **Usage Examples** <h2>
 start by opening the shell and running a simple command like pwd, then exit:
-```simple_shell:/home/username$ pwd
+```
+simple_shell:/home/username$ pwd
 /home/username/
 simplesh:/home/username$ exit
-Username@your-regular-prompt:~$```
+Username@your-regular-prompt:~$
+```
 ## **Authors** <h2>
 Nani Eya & Bouaziz Emna
